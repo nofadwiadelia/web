@@ -16,7 +16,7 @@ class CartSeeder extends Seeder
     	$limit = 50;
 
     	for ($i = 0; $i < $limit; $i++){
-    		DB::table('pemesanan_models')->insert([
+    		DB::table('model_carts')->insert([
     			'gambar' => $faker->gambar,
     			'jenis' => $faker->jenis,
     			'merk' => $faker->merk,
