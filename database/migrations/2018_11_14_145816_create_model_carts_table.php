@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,6 +15,11 @@ class CreateModelCartsTable extends Migration
     {
         Schema::create('model_carts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('gambar');
+            $table->string('jenis');
+            $table->string('merk');
+            $table->string('harga');
+            $table->string('kategori');
             $table->timestamps();
         });
     }
